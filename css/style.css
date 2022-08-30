@@ -1219,3 +1219,169 @@ nav ul li ul{
     transition: all 0.3s;
 }
 
+/* Animación imagen de beneficios-index */
+/* Efecto hover imagen */
+.contenedor{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__imagen{
+    width: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.contenedor__imagen img{
+    width: 85%;
+    height: 100%;
+    transition: all .3s;
+    box-shadow: 1px 15px 10px rgb(0, 0, 0, 0.50);
+}
+
+.contenedor__imagen:hover img{
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.contenedor__imagen::before{
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.contenedor__imagen:hover:before{
+    background: rgba (0, 0, 0, 1);
+    z-index: 2;
+    transition: all .3s;
+}
+
+.texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 2rem;
+    margin:10px;
+    padding: 5px;
+    color: black;
+    position: relative;
+    left: 100%;
+    transition: all 0.3s;
+    text-shadow: 1px 1px 1px black;
+}
+
+.contenedor__imagen:hover .titulo{
+    left: 0;
+    animation-delay: .3s;
+    transition: all 0.3s;
+}
+
+/* Animaciones botones */
+/* Index */
+.formulario__buttom--register{
+	transition: all .5s;
+}
+
+.formulario__buttom--register:hover{
+	background: rgb(171, 171, 171);
+	transform: scale(1.2);
+}
+
+.formulario__buttom--register2{
+	transition: all .5s;
+}
+
+.formulario__buttom--register2:hover{
+	background: rgb(171, 171, 171);
+	transform: scale(1.2);
+}
+
+/* Contacto */
+.formulario__buttom--izq2{
+	transition: all .5s;
+}
+.formulario__buttom--izq2:hover{
+	background: rgb(171, 171, 171);
+	transform: scale(1.2);
+}
+.formulario__buttom--der2{
+	transition: all .5s;
+}
+.formulario__buttom--der2:hover{
+	background: rgb(171, 171, 171);
+	transform: scale(1.2);
+}
+
+/* Descargable */
+/* Subtitulo */
+.container{
+	text-align: center;
+	position: absolute;
+	left: 40%;
+}
+
+.text{
+	text-transform: uppercase;
+	font-size: 2rem;
+	text-align: center;
+	color: transparent;
+	letter-spacing: 5px;
+	position: relative;
+}
+
+.text::before{
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #000;
+	-webkit-text-stroke: 2px #000;
+	width: 0;
+	height: 150%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 5px solid #89c9c8;
+	animation: text-fill 2s ease-in-out alternate infinite;
+}
+@keyframes text-fill{
+	100%{
+		width: 100%;
+	}
+}
+
+/* Botones */
+.main__buttom--descargas{
+	transition: all .5s;	
+}
+.main__buttom--descargas:hover{
+	background: rgb(171, 171, 171);
+	transform: scale(1.2);
+}
+
+/* Servicios */
+/* Botones */
+.section__buttom{
+	transition: all .5s;	
+}
+.section__buttom:hover{
+	background: rgb(171, 171, 171);
+	transform: scale(1.2);
+}
