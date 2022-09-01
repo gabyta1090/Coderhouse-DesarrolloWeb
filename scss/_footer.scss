@@ -1,0 +1,33 @@
+footer { 
+
+	.text-bold { 
+
+	}
+
+	a { 
+
+		.footer__logo--redes { 
+
+		}
+	}
+
+	.text-center { 
+
+	}
+}
+
+#footer {
+	background-color: rgb(215, 215, 215);
+	padding: 35px 15px;
+	grid-area: footer;
+}
+.footer__logo--redes {
+	width: 5%;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+}
+.div__copyright_text {
+	background-color: none;
+	width: 100%;
+	margin: 10px 10px 10px 10px;
+}
