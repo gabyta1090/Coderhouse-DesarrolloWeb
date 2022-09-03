@@ -263,8 +263,8 @@ body main section form fieldset input {
 
 body main section form fieldset textarea {
   font-size: 15px;
-  width: 95%;
-  margin: 15px 15px 25px 20px; }
+  width: 88%;
+  margin: 15px 15px 25px 1px; }
 
 body main section form fieldset div input {
   background-color: #89c9c8;
@@ -425,15 +425,15 @@ footer {
   height: 5px; }
 
 .controls {
-  width: 95%;
+  width: 90%;
   padding: 5px;
   margin-bottom: 16px;
   margin: 15px 15px 15px 15px; }
 
 .formulario__fieldset--mensaje {
   font-size: 15px;
-  width: 95%;
-  margin: 15px 15px 25px 20px; }
+  width: 88%;
+  margin: 15px 15px 25px 1px; }
 
 #botones {
   display: flex;
