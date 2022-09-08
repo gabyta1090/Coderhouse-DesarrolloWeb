@@ -1,0 +1,265 @@
+body{
+	header{
+		nav{
+			background-color: $color-principal;
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			grid-area: nav;
+			a{
+
+			 
+				img{
+					width: 50%;
+					margin: 10px;
+					padding: 10px;
+				}
+			}
+			input{
+			label{
+				display: block;
+				i{
+					img{
+						width: 30px;
+						height: 30px;
+						border-radius: 2px;
+					}
+					
+				}		
+			}			
+			ul{
+				list-style: none;
+				display: block;
+				position: fixed;
+				top: 10px;
+				left: -100%;
+				background: $color-principal;
+				width: 100%;
+				height: 100vh;
+				right: 10px;
+				display: flex;
+				justify-content: column;
+				align-items: center;
+				li{
+					list-style: none;
+					margin-right: 5px;
+					display: inline-block;
+					padding: 10px;
+					margin: 0;
+					padding: 1rem;
+				
+				ul{
+					position: absolute;
+                    margin-top: 1px;
+                    height: 100px;
+                    transform: translateY(100%);
+                    left: 100px;
+                    font-size: 0.8rem;
+						
+						}
+						
+					}		
+				} 
+			}
+					
+		} 
+	}
+		
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Nuosu SIL, sans-serif;
+}
+
+html {
+	font-size: 100%;
+}
+body {
+	overflow-x: hidden;
+	background-color: #0000;
+}
+
+.menu-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+	display: block;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+.menu-icon, #check {
+	display: none;
+}
+h1 {
+	font-family: Tiro Gurmukhi, cursive;
+	font-style: initial;
+	color: black;
+	font-size: 1.5rem;
+}
+h2 {
+	font-family: Tiro Gurmukhi, cursive;
+	font-style: initial;
+	color: black;
+	font-size: 1.2rem;
+}
+h3 {
+	font-family: Tiro Gurmukhi, cursive;
+	color: black;
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-family: Tiro Gurmukhi, cursive;
+	color: black;
+	font-size: 1.2rem;
+	margin-top: 10px;
+	font-weight: 100;
+	margin-bottom: 3px;
+  }
+
+.text-bold {
+	Font-weight: 800;
+}
+.text-right {
+	Text-align: left;
+}
+.text-center {
+	Text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+p {
+	font-family: Nuosu SIL, sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: $color-parrafo;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: none;
+	margin: 30px;
+}
+#grillacontacto {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "header header" "text text" "main main" "footer footer";
+}
+  
+header {
+	grid-area: header;
+}
+  
+ main {
+	grid-area: main;
+}
+  
+footer {
+	grid-area: footer;
+}
+
+.header__img__logo {
+	width: 50%;
+	margin: 10px;
+	padding: 10px;
+}
+#check {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+.menu-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+nav {
+	background-color: $color-principal;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  nav ul {
+	list-style: none;
+  }
+  
+  nav ul li {
+	list-style: none;
+	margin-right: 5px;
+	display: inline-block;
+  }
+  
+  .menu > li {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .menu > li > a {
+	display: block;
+	padding: 10px;
+	font-size: 1.2rem;
+	color: black;
+	text-decoration: none;
+	font-family: Tiro Gurmukhi, sans-serif;
+  }
+  
+  .menu li a:hover {
+	background-color: $color-secundario;
+	transition: all 0.3s;
+  }
+  
+  .submenu {
+	position: absolute;
+	background: $color-submenu;
+	width: 180%;
+	visibility: hidden;
+  }
+  
+  .submenu li a {
+	display: block;
+	padding: 20px;
+	color: #fff;
+	font-family: Tiro Gurmukhi, sans-serif;
+	text-decoration: none;
+  }
+  
+  .menu li:hover .submenu {
+	visibility: visible;
+	transform: scale(1.1);
+  }
+  
+  nav > ul > li:first-child > a {
+	background-image: url(../img/home.png);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 5px 20px 20px;
+  }
+  
+  nav > ul > li:first-child:hover > a {
+	background-image: url(../img/home.png);
+	background-size: 30px;
+  }
+  
+  .menu-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+  }
+  
+  .menu-icon, #check {
+	display: none;
+  }
+}
+
+  
